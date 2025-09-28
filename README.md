@@ -1,6 +1,7 @@
 # DTEKV I2C
 
 A small library to comunicate with i2c devices over GPIO pins.
+This is intended for use with the DTEKV board of the Computer Hardware Engineering (IS1200) course at KTH.
 
 ## Usage Guide
 
@@ -33,3 +34,9 @@ diff --git a/Makefile b/Makefile
 
  build: clean main.bin
 ```
+
+#### Configure GPIO pins
+
+By default this library uses GPIO pin 0 and 1.
+You can change this in the `include/dtekv-i2c-lib/dtekv-i2c-lib.h` header.
+There are also some other modifiable values in `include/dtekv-mpu6050-lib/dtekv-mpu6050-lib.h`, such as the MPU6050 I2C Address.
